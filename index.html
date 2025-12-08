@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreador de hábitos </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>✨ Rastreador de hábitos - Seu progresso!</h1>
+        <div id="incentivo-message">
+            </div>
+    </header>
+
+    <main>
+        <h2>Meus hábitos</h2>
+        
+        <form id="add-habit-form">
+            <input type="text" id="new-habit-name" placeholder="Nome do novo hábito..." required>
+            <button type="submit" class="primary-btn">Adicionar hábito</button>
+        </form>
+
+        <section id="habits-list">
+            <p class="placeholder-text">Nenhum hábito ainda. Adicione um para começar!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Criado com amor para você.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

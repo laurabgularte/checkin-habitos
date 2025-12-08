@@ -1,0 +1,122 @@
+:root {
+    --color-background: #000000; /* Preto */
+    --color-text: #F0F0F0; /* Branco Suave */
+    --color-primary: #007BFF; /* Azul Principal */
+    --color-secondary: #0056b3; /* Azul Escuro para Hover */
+    --color-success: #28a745; /* Verde para Concluído */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-text);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: var(--color-primary);
+    font-size: 2.5em;
+}
+
+#incentivo-message {
+    min-height: 50px;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: var(--color-secondary);
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Formulário de Adição */
+#add-habit-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+#new-habit-name {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid var(--color-primary);
+    border-radius: 5px;
+    background-color: #1a1a1a;
+    color: var(--color-text);
+}
+
+/* Botões */
+.primary-btn, .check-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.primary-btn {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.primary-btn:hover {
+    background-color: var(--color-secondary);
+}
+
+/* Lista de Hábitos */
+#habits-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.habit-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 600px;
+    padding: 15px;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    border-left: 5px solid var(--color-primary);
+}
+
+.habit-details {
+    text-align: left;
+}
+
+.habit-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.streak-info {
+    font-size: 0.9em;
+    color: var(--color-primary);
+}
+
+.check-btn {
+    background-color: var(--color-success);
+    color: white;
+}
+
+.check-btn:disabled {
+    background-color: #444;
+    cursor: not-allowed;
+}
+
+.check-btn.checked {
+    background-color: var(--color-primary);
+}
