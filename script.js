@@ -1,4 +1,4 @@
-script.js
+
 // Variável global que armazena todos os hábitos
 let habits = [];
 
