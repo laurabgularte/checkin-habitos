@@ -12,8 +12,14 @@ const incentiveMessageDiv = document.getElementById('incentivo-message');
 // Carrega os hábitos salvos ou inicia um array vazio
 function loadHabits() {
     const storedHabits = localStorage.getItem('myGirlHabits');
-    if (storedHabits) {
-        habits = JSON.parse(storedHabits);
+  try {
+        if (storedHabits) {
+            habits = JSON.parse(storedHabits);
+        }
+    } catch (e) {
+        console.error("Erro ao carregar hábitos do LocalStorage:", e);
+        // Se houver erro (dados corrompidos), inicia com array vazio
+        habits = []; 
     }
     renderHabits();
 }
